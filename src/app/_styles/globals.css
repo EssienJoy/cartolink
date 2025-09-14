@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors */
+  --color-primary: #f5f5f5;
+  --color-secondary: #14161C;
+
+
+  /* Text colors */
+  --color-primary-text: #14161C;
+  --color-secondary-text: #fff;
+  --color-accent-text: #0000ff;
+
+  /* Background colors */
+  --color-grey-background: #eaeaea;
+  --color-black-background: #14161C;
+  --color-white-background: #fff;
+  --color-blue-background: #0000ff;
+
+  /* Max Width */
+  --container-main: 1280px;
+
+  /* Main Spacing */
+  --spacing-main: 12px;
+}
+
+
+button,
+link,
+label {
+  cursor: pointer;
+  /* color: #0000ff; */
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
