@@ -32,9 +32,6 @@ function UiMode() {
 		} else {
 			htmlEl.classList.remove("dark");
 		}
-		// if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-		// 	htmlEl.classList.add("dark");
-		// }
 	}, [theme]);
 
 	return (

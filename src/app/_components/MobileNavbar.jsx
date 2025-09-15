@@ -26,52 +26,52 @@ function MobileNavbar() {
 			<ul className='flex flex-col gap-5 items-center'>
 				<li>
 					<Button onClick={closeNav}>
-						<FaTimes size='1.25rem' />
+						<FaTimes size='1.5rem' />
 					</Button>
 				</li>
 				<li className='bg-white-background py-1.5 px-3 rounded-xl'>
 					<Link href='/'>
-						<MdHomeFilled size='1.5rem' />
+						<MdHomeFilled size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<RiGalleryFill size='1.5rem' />
+						<RiGalleryFill size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BsFillCameraVideoFill size='1.5rem' />
+						<BsFillCameraVideoFill size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<MdEdit size='1.5rem' />
+						<MdEdit size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BiSolidEyedropper size='1.5rem' />
+						<BiSolidEyedropper size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<LiaAutoprefixer size='1.5rem' />
+						<LiaAutoprefixer size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BiSolidCreditCardAlt size='1.5rem' />
+						<BiSolidCreditCardAlt size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<RiGalleryFill size='1.5rem' />
+						<RiGalleryFill size='2rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BsHeadset size='1.5rem' />
+						<BsHeadset size='2rem' />
 					</Link>
 				</li>
 			</ul>
