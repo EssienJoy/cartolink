@@ -4,17 +4,13 @@ import Image from "next/image";
 
 import Button from "@/app/_ui/Button";
 import { features as featuresData } from "@/app/_lib/featuresData";
-import { useState } from "react";
 import Link from "next/link";
+import useToggle from "@/app/_hooks/useToggle";
 
 function Features() {
-	const [toggle, setIsToggle] = useState(false);
+	const { toggle, toggleState } = useToggle();
 
 	const features = toggle ? featuresData : featuresData.slice(0, 3);
-
-	function toggleFeatures() {
-		setIsToggle((prev) => !prev);
-	}
 
 	return (
 		<section className='mx-auto max-w-[var(--container-main)] px-[var(--spacing-main)] pt-2 pb-7'>
@@ -22,7 +18,7 @@ function Features() {
 				<h2 className='text-2xl font-bold '>Generate</h2>
 				<Button
 					className='flex gap-1  bg-primary items-center px-2'
-					onClick={toggleFeatures}>
+					onClick={toggleState}>
 					<IoIosArrowDown className='text-accent-text dark:text-primary-text ' />
 					<p className='text-sm text-accent-text dark:text-primary-text '>
 						{toggle === false ? "Show all" : "Hide"}

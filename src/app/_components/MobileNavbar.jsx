@@ -17,7 +17,7 @@ function MobileNavbar() {
 	const { closeNav, toggleNav } = useToggle();
 	return (
 		<nav
-			className={`bg-grey-background transition-all dark:text-primary-text  rounded-2xl p-2 lg:hidden fixed top-0 right-0 z-1000`}
+			className={`bg-grey-background transition-all dark:text-primary-text  rounded-2xl py-4 px-2 lg:hidden fixed top-0 right-0 z-1000`}
 			style={
 				toggleNav === false || toggleNav === null
 					? { transform: "translateY(-100%)" }
@@ -26,52 +26,52 @@ function MobileNavbar() {
 			<ul className='flex flex-col gap-5 items-center'>
 				<li>
 					<Button onClick={closeNav}>
-						<FaTimes />
+						<FaTimes size='1.25rem' />
 					</Button>
 				</li>
 				<li className='bg-white-background py-1.5 px-3 rounded-xl'>
 					<Link href='/'>
-						<MdHomeFilled size='1.25rem' />
+						<MdHomeFilled size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<RiGalleryFill size='1.25rem' />
+						<RiGalleryFill size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BsFillCameraVideoFill size='1.25rem' />
+						<BsFillCameraVideoFill size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<MdEdit size='1.25rem' />
+						<MdEdit size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BiSolidEyedropper size='1.25rem' />
+						<BiSolidEyedropper size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<LiaAutoprefixer size='1.25rem' />
+						<LiaAutoprefixer size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BiSolidCreditCardAlt size='1.25rem' />
+						<BiSolidCreditCardAlt size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<RiGalleryFill />
+						<RiGalleryFill size='1.5rem' />
 					</Link>
 				</li>
 				<li>
 					<Link href='#'>
-						<BsHeadset />
+						<BsHeadset size='1.5rem' />
 					</Link>
 				</li>
 			</ul>

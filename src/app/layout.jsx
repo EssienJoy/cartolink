@@ -14,6 +14,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
 	const cookieStore = await cookies();
 	const theme = cookieStore.get("themeMode")?.value || "light";
+	console.log(theme);
 
 	return (
 		<html lang='en' className={`${theme}`}>

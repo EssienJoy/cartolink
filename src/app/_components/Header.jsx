@@ -40,7 +40,6 @@ function Header() {
 			<Navbar />
 
 			<div className='flex items-center gap-3'>
-				<HarmburgerMenu />
 				<Link
 					href='#'
 					className='lg:flex hidden items-center gap-2 bg-grey-background rounded-lg text-sm p-1.5 dark:text-primary-text'>
@@ -66,6 +65,7 @@ function Header() {
 					quality={80}
 					className='rounded-full object-conver hidden lg:block w-7 h-7'
 				/>
+				<HarmburgerMenu />
 			</div>
 		</header>
 	);
